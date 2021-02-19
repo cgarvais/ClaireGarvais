@@ -588,7 +588,7 @@ section {
   justify-content: center;
 }
 .flexcontainer img {
-  width: 175px;
+  max-width: 175px;
 }
 /*--------------------------------------------------------------
 # Resume
