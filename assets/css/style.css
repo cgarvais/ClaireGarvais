@@ -15,13 +15,12 @@ body {
 }
 
 a {
-  color:  #FF5A5F;
+  color:  #ff0077;
   text-decoration: none;
 }
 a:hover {
-  opacity: 0.8;
   text-decoration: none;
-  color: #FF5A5F;
+  color: #ff0077;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,9 +33,18 @@ h6 {
   font-size: 1.1rem;
 }
 figcaption {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-style: italic;
   text-align: center;
+}
+button {
+  background-color: #ff0077;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+button:hover{
+  box-shadow: 0px 1px 3px #ff0077;
 }
 
 /*--------------------------------------------------------------
@@ -49,7 +57,7 @@ figcaption {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #FF5A5F ;
+  background: #ff0077 ;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -63,7 +71,7 @@ figcaption {
 }
 
 .back-to-top:hover {
-  background: #FF5A5F;
+  background: #ff0077;
   color: #fff;
 }
 
@@ -91,7 +99,7 @@ figcaption {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #FF5A5F;
+  border: 6px solid #ff0077;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -219,7 +227,7 @@ figcaption {
 
 .nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a {
   color: #fff;
-  background: #FF5A5F;
+  background: #ff0077;
 }
 
 .nav-menu a:hover span, .nav-menu .active span, .nav-menu li:hover > a span {
@@ -268,7 +276,7 @@ figcaption {
 
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
-  background-color: #FF5A5F;
+  background-color: #ff0077;
 }
 
 /*--------------------------------------------------------------
@@ -316,7 +324,7 @@ figcaption {
 }
 
 #hero p span {
-  color: #FF5A5F;
+  color: #ff0077;
   letter-spacing: 1px;
 }
 @media (max-width: 992px) {
@@ -374,7 +382,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #FF5A5F;
+  background: #ff0077;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -386,37 +394,28 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about h3 {
+.about h4 {
   text-align: center;
 }
 .about p {
+  font-size: 1rem;
   text-align: center;
 }
-.about .content ul {
-  list-style: none;
-  padding: 0;
+.about ul {
+  text-align: left;
 }
 
-.about .content ul li {
+.about ul li {
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.about img {
+  width: 90%;
 }
 
-.about .content ul strong {
+.about ul strong {
   margin-right: 10px;
-}
-
-.about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: #FF5A5F;
-  line-height: 0;
-  color: #666;
-}
-
-.about .content p:last-child {
-  margin-bottom: 0;
 }
 .cool-things img {
   max-width: 700px;
@@ -425,29 +424,32 @@ section {
 .row {
   text-align: center;
 }
+@media (min-width: 992px) {
+  #list-heading {
+    text-align: left;
+  }
+}
 /*--------------------------------------------------------------
 # CTA
 --------------------------------------------------------------*/
 .cta {
-  padding: 30px;
-  background-color: rgb(233, 233, 233);
-  margin-left: -100px;
+  background-color:#F4F4F4;
   display: flex;
-  flex-flow: column;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: -100px;
 }
 .cta .content {
-  text-align: center;
-  margin-left: 100px !important;
+  margin-left: 120px;
+  margin-right: 20px;
 }
-.cta .skyline img {
-  width: 100%;
-  margin: auto;
-  margin-top: 20px;
+.cta img {
+  max-width: 300px;
+  margin-left: 100px;
 
 }
 .cta button {
-  background-color: #FF5A5F;
+  background-color: #ff0077;
   color: white;
   padding: 10px 15px;
 }
@@ -455,30 +457,24 @@ section {
   color: white;
 }
 .cta a:hover {
- opacity: 0.8;
  text-shadow: none;
 }
 @media (min-width 992px) {
   .cta {
-    background-color: rgb(233, 233, 233);
-    margin-left: -100px;
+    background-color: #F4F4F4;
   }
   .cta .content {
     text-align: center;
-    float: center;
-    margin-left: 50px !important
   }
   .cta h3 {
     font-size: 1.2rem;
-    text-align: center;
   }
   .cta button {
     margin-bottom: 15px;
   }
-  .cta .skyline img {
-    max-width: 100vw;
-    margin-left: 70px;
-    margin-top: 20px;
+  .cta img {
+    width: 100px;
+    margin-left: auto !important;
   }
 }
 /*--------------------------------------------------------------
@@ -612,7 +608,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid#FF5A5F;
+  border-left: 2px solid#ff0077;
   position: relative;
   text-align: left;
   font-size: 0.9rem;
@@ -658,16 +654,16 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #FF5A5F;
+  border: 2px solid #ff0077;
 }
 .resume button {
-  background-color: #FF5A5F;
+  background-color: #ff0077;
+  padding: 10px 16px;
 }
 .resume button a{
   color: white;
 }
 .resume a:hover{
-  opacity: 0.8;
 }
 
 /*--------------------------------------------------------------
@@ -705,7 +701,6 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  opacity: 0.8;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -779,12 +774,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #FF5A5F;
+  color: #ff0077;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #FF5A5F;
+  color: #ff0077;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -805,7 +800,6 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  opacity: 0.8;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -830,13 +824,13 @@ section {
   right: 15px;
 }
 .portfolio button {
-  background-color: #FF5A5F;
+  background-color: #ff0077;
   color: white;
   padding: 10px 15px;
   border-radius: 20px;
 }
 .portfolio #portfolio-flters li {
-  color: #FF5A5F;
+  color: #ff0077;
 }
 
 /*--------------------------------------------------------------
@@ -1292,7 +1286,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #FF5A5F;
+  background: #ff0077;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1305,7 +1299,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #FF5A5F;
+  background: #ff0077;
   color: #fff;
   text-decoration: none;
 }
