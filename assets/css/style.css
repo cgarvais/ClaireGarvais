@@ -420,6 +420,7 @@ section {
 .cool-things img {
   max-width: 700px;
   margin: auto;
+  padding: 0px;
 }
 .row {
   text-align: center;
