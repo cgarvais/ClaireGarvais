@@ -313,7 +313,7 @@ button:hover{
   font-weight: 700;
   line-height: 56px;
   color: #45505b;
-  margin-top: -300px !important;
+  margin-top: -275px !important;
 }
 
 #hero p {
@@ -424,9 +424,18 @@ section {
 .row {
   text-align: center;
 }
+#desktop-img img {
+  display: none;
+}
 @media (min-width: 992px) {
   #list-heading {
     text-align: left;
+  }
+  .cool-things img {
+    display: none;
+  }
+  #desktop-img img {
+    display: block;
   }
 }
 /*--------------------------------------------------------------
