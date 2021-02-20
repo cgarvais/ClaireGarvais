@@ -418,7 +418,6 @@ section {
   margin-right: 10px;
 }
 .cool-things img {
-  max-width: 700px;
   margin: auto;
   padding: 0px;
 }
@@ -437,6 +436,7 @@ section {
   }
   .desktop-img img {
     display: block;
+    max-width: 70%;
   }
 }
 /*--------------------------------------------------------------
