@@ -424,7 +424,7 @@ section {
 .row {
   text-align: center;
 }
-#desktop-img img {
+.desktop-img img {
   display: none;
 }
 @media (min-width: 992px) {
@@ -434,7 +434,7 @@ section {
   .cool-things img {
     display: none;
   }
-  #desktop-img img {
+  .desktop-img img {
     display: block;
   }
 }
