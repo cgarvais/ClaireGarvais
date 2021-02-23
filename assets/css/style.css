@@ -543,7 +543,7 @@ section {
 }
 .card {
   border: none;
-  max-width: 220px;
+  max-width: 250px;
 }
 .card-body {
   text-align: center;
@@ -552,8 +552,11 @@ section {
   max-width: 180px;
   margin: auto;
 }
-.card-body h5{
-  font-size: 1.4rem;
+.card-body h3{
+  font-size: 1.6rem;
+}
+.card-body h4{
+  font-size: 1.2rem;
 }
 .card-body p {
   font-size: 0.9rem;
